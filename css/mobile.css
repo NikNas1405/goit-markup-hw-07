@@ -128,7 +128,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     transition: color 250ms var(--timing-function);
@@ -143,15 +143,13 @@
 
   .header-socialmedia-list {
     display: flex;
-    justify-content: space-between;
-    max-width: 328px;
     gap: 56px;
     margin-top: 48px;
   }
 
   @media screen and (max-width: 427px) {
     .header-tel {
-      font-size: 26px;
+      font-size: 25px;
     }
 
     .header-socialmedia-list {
@@ -159,17 +157,12 @@
     }
   }
 
-  .header-socialmedia-item {
-    width: 40px;
-    height: 40px;
-  }
-
   .header-socialmedia-item-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: var(--primary-brand-color);
     color: var(--light-color, #f4f4fd);
@@ -191,7 +184,7 @@
   .team-item {
     margin: 0 auto;
   }
-  
+
   .team-item:not(:last-child) {
     margin-bottom: 72px;
   }
@@ -234,12 +227,7 @@
 /*-------- for mobile and tablet ------ */
 
 @media screen and (max-width: 1199px) {
-  .advantage-item-decor {
-    display: none;
-  }
-  .advantage-icon {
-    display: none;
-  }
+  .advantage-item-decor,
   .about {
     display: none;
   }
