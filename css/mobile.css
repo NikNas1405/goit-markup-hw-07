@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
     background-color: var(--secondary-light-color);
     transform: translateX(100%);
     transition: transform 250ms var(--timing-function);
@@ -56,7 +57,7 @@
   }
 
   .header-btn-mobile-close {
-    position: absolute;
+    position: fixed;
     top: 24px;
     right: 24px;
     width: 24px;
@@ -105,10 +106,6 @@
     color: var(--pressed-state-color);
   }
 
-  .header-address {
-    margin-top: auto;
-  }
-
   .header-address-list {
     display: flex;
     flex-direction: column;
@@ -124,12 +121,6 @@
     text-transform: capitalize;
     color: var(--primary-brand-color);
     transition: color 250ms var(--timing-function);
-  }
-
-  @media screen and (max-width: 479px) {
-    .header-tel {
-      font-size: 30px;
-    }
   }
 
   .header-mail {
@@ -156,6 +147,16 @@
     max-width: 328px;
     gap: 56px;
     margin-top: 48px;
+  }
+
+    @media screen and (max-width: 427px) {
+    .header-tel {
+      font-size: 26px;
+    }
+    
+    .header-socialmedia-list {
+        gap: 40px;
+  }
   }
 
   .header-socialmedia-item {
