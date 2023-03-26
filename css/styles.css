@@ -52,7 +52,7 @@ svg {
 }
 
 .logo {
-    font-family: var(--secondary-font);
+  font-family: var(--secondary-font);
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -122,7 +122,6 @@ svg {
 .btn:focus {
   background-color: var(--pressed-state-color);
 }
-
 
 /* ---------- footer ---------- */
 
@@ -530,7 +529,7 @@ svg {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  }
+}
 
 .advantage-text {
   font-size: 16px;

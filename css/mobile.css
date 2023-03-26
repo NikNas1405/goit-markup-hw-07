@@ -149,14 +149,14 @@
     margin-top: 48px;
   }
 
-    @media screen and (max-width: 427px) {
+  @media screen and (max-width: 427px) {
     .header-tel {
       font-size: 26px;
     }
-    
+
     .header-socialmedia-list {
-        gap: 40px;
-  }
+      gap: 40px;
+    }
   }
 
   .header-socialmedia-item {
@@ -188,22 +188,16 @@
     margin-bottom: 72px;
   }
 
+  .team-item {
+    margin: 0 auto;
+  }
+  
   .team-item:not(:last-child) {
     margin-bottom: 72px;
   }
 
-  .team-item {
-    margin: 0 auto;
-  }
-
   .photo-gallery-item-wrap {
     width: 100%;
-  }
-
-  .photo-gallery-item-wrap img:nth-child(-1n + 4) {
-    object-fit: cover;
-    overflow: hidden;
-    object-position: -3px -16px;
   }
 
   .footer {
