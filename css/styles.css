@@ -662,7 +662,6 @@ svg {
   display: flex;
   flex-wrap: wrap;
   max-width: 263px;
-  flex-basis: calc(100% - 24px * 2) / 3;
   gap: 24px 16px;
   margin-bottom: 48px;
 }
