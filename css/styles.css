@@ -96,6 +96,25 @@ svg {
   margin: 0 auto;
 }
 
+/* .container { 
+width: 100%; 
+padding-left: 15px; 
+padding-right: 15px; 
+margin-left: auto; 
+margin-right: auto; 
+} 
+@media screen and (min-width: 480px) {
+.container { 
+max-width: 428px; 
+} 
+}
+@media screen and (min-width: 768px) { 
+.container { max-width: 768px; } 
+} 
+@media screen and (min-width: 1200px) {
+ .container { max-width: 1158px; } 
+} */
+
 .section {
   padding: 96px 16px;
 }
@@ -307,8 +326,8 @@ svg {
   top: 50%;
   left: 50%;
   max-width: 408px;
-  width: 100%;
-  min-height: 586px;
+  width: calc(100% - 2 * 15px);
+  height: auto;
   padding: 72px 16px 24px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -457,11 +476,13 @@ svg {
   letter-spacing: 0.04em;
 }
 
-.privacy-policy-modal-label {
-  position: relative;
-  display: flex;
+.privacy-policy {
   margin-bottom: 24px;
   position: relative;
+}
+
+.privacy-policy-modal-label {
+  display: flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -479,9 +500,9 @@ svg {
 }
 
 .checkbox-policy-icon {
-  position: absolute;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1px solid var(--main-dark);
   border-radius: 2px;
   transition: background-color 250ms var(--timing-function),
@@ -501,11 +522,6 @@ svg {
   border: 1px solid var(--pressed-state-color);
 }
 
-.checkbox-policy-label {
-  position: absolute;
-  left: 24px;
-}
-
 .modal-privacy-policy-link {
   font-size: 12px;
   line-height: 1.33;
@@ -520,7 +536,10 @@ svg {
 }
 
 .form-modal-btn {
-  transform: translate(50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
 }
 
 .advantage-title {
